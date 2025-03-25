@@ -1,4 +1,4 @@
-const input = require("fs").readFileSync("/dev/stdin").toString().trim();
+const input = require("fs").readFileSync("test.txt").toString().trim();
 
 const a = input.split(" ").map(Number);
 let sum = 0;
