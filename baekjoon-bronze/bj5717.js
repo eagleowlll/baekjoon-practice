@@ -5,7 +5,8 @@ const input = require("fs")
   .split("\n");
 
 for (let line of input) {
-  const [a, b] = input.split(" ").map(Number);
+  const [a, b] = line.split(" ").map(Number);
   if (a === 0 && b === 0) break;
+
   console.log(a + b);
 }
