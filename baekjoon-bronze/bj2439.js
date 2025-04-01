@@ -1,7 +1,13 @@
-const input = require("fs").readFileSync("/dev/stdin").toString().trim();
+const input = require("fs")
+  .readFileSync("/dev/stdin")
+  .toString()
+  .trim()
+  .split("\n");
 
-const N = Number(input);
+const result = input.map(Number);
+const A = result[0];
+const B = result[1];
+const C = result[2];
 
-for (let i = 1; i <= N; i++) {
-  console.log("*".repeat(i).padStart(N, " "));
-}
+console.log(A + B - C);
+console.log(Number(String(A) + String(B)) - C);
